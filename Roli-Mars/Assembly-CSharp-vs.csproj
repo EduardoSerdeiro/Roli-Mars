@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{12FCEB27-3C19-4652-D11D-B1E1BA0F94FF}</ProjectGuid>
+	<ProjectGuid>{6A17679B-612C-7D7B-97D8-07F56B0C714B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -161,6 +161,7 @@
      <Compile Include="Assets\Resources\Scripts\Character\CarController.cs" />
      <Compile Include="Assets\Resources\Scripts\Character\CarSelfRighting.cs" />
      <Compile Include="Assets\Resources\Scripts\Character\CarUserControl.cs" />
+     <Compile Include="Assets\Resources\Scripts\Character\FollowGround.cs" />
      <Compile Include="Assets\Resources\Scripts\Character\Mudguard.cs" />
      <Compile Include="Assets\Resources\Scripts\Character\SkidTrail.cs" />
      <Compile Include="Assets\Resources\Scripts\Character\Suspension.cs" />
@@ -184,15 +185,19 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
- <Reference Include="websocket-sharp">
- <HintPath>C:/Users/Public/Documents/Unity Projects/MarioKartTCP3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
- </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/Public/Documents/Unity Projects/MarioKartTCP3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/Public/Documents/Unity Projects/Roli-Mars/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>C:/Users/Public/Documents/Unity Projects/Roli-Mars/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{21C6BF8B-03B1-D754-C51A-E0B404A36DFF}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
